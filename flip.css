@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    perspective: 900px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-card-front img{
+    height: 2rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+  }
+/*   ************************************************ */
+
+.content
+{
+    position: relative;
+    margin-top: 50rem;
+}
+.content h2{
+    position: absolute;
+    color: #fff;
+    transform: translate(-50% ,-50%);
+    font-size: 8em;
+
+}
+.content h2:nth-child(1)
+{color: transparent;
+-webkit-text-stroke: 2px #03a9fa;
+}
+.content h2:nth-child(2)
+{color: #03a9fa;
+animation: animate 4s ease-in-out infinite;}
+
+@keyframes animate
+{
+    0%,100%{
+        clip-path: polygon(0% 39%, 14% 41%, 29% 45%, 54% 59%, 64% 58%, 74% 57%, 88% 51%, 100% 44%, 100% 100%, 0% 100%);
+    }
+    50%{
+        clip-path: polygon(0 53%, 16% 60%, 28% 61%, 45% 60%, 61% 53%, 71% 42%, 86% 34%, 100% 32%, 100% 100%, 0% 100%);
+
+    }
+}
+
+
+  
+  .card-container {
+    perspective: 1000px;
+  }
+  
+  .card {
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .front {
+    background-color: #3498db;
+    transform: rotateY(0deg);
+  }
+  
+  .back {
+    background-color: #e74c3c;
+    transform: rotateY(180deg);
+  }
+  
+  .card-container:hover .card {
+    transform: rotateY(180deg);
+  }
+
+/* CSS */
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
