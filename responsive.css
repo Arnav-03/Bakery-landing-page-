@@ -482,8 +482,8 @@ footer {
 }
 
 
-/* *************************************************************************
- */
+/* ******************************************************************************************************************** */
+
 /*  mini phone
  */
 
@@ -630,6 +630,7 @@ footer {
 
 
 }
+/* ******************************************************************************************************************** */
 
 
 /* phone */
@@ -763,8 +764,8 @@ footer {
     }
 
 }
-
-@media only screen and (min-width: 520px) and (max-width: 800px) {
+/* ******************************************************************************************************************** */
+@media only screen and (min-width: 520px) and (max-width: 768px) {
     nav .logo a {
         font-size: 3rem;
     }
@@ -882,4 +883,188 @@ footer {
         align-items: center;
         row-gap: 4rem;
     }
+}
+/* *****************************************************************************************************************************************
+ */
+ @media only screen and (min-width: 769px) and (max-width: 992px) {
+
+ 
+    nav .logo {
+        gap: 0.9rem;
+    }
+    
+    nav .logo a {
+        font-size: 2rem;
+        margin-top: 0px;
+    }
+    
+    nav .logo img {
+        height: 3rem;
+    }    
+    nav ul {
+        gap: 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    nav ul li a {
+        font-size: 1rem;
+    }
+    
+    nav ul li a:hover {
+        font-size: 1.2rem;
+    }
+    
+    .main {
+        flex-direction: row;
+    }
+        
+    .title {
+        width: 60vh;
+        font-size: 3.3rem;
+        padding: 0;
+        padding-left: 2rem;
+    }
+    
+    .perfection {
+        font-weight: 500;
+        font-size: 3rem;
+    }
+    .main1 {
+        margin-bottom: 2rem;
+    }
+    .homeimg img{
+        height: 9rem;
+        width: auto;
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+    
+    .homeimg2 img {
+        width: 30vw;
+        margin-left: 50%;
+        margin-top: 4rem;
+    }
+    
+    footer {
+        gap: 3rem;
+        padding: 2rem;
+        padding-bottom: 0;
+        margin-bottom: 0;   
+    }
+
+    #icons img {
+        height: 4rem;
+    }
+    .btn{
+        margin-top: 1rem;
+    }
+
+    
+    #icons {
+        gap: 0.5rem;
+    }
+
+    
+    .item-title h2 {
+        font-size: 4em;    
+    }
+
+    
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+    
+
+    .card-back h1 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    
+    .card-back p {
+        font-size: 1.5rem;
+    }
+    
+    .card-back span {
+        font-size: 1.7rem;
+    }
+
+}
+
+/* *****************************************************************************************************************************************
+ */
+ @media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+
+
+
+nav .logo a {
+    font-size: 2.5rem;
+}
+
+nav .logo img {
+    height: 4rem;
+    margin-top: 10px;
+}
+
+
+nav ul {
+    gap: 1.8rem;
+}
+
+
+.title {
+    width: 80vh;
+    font-size: 3.6rem;
+}
+
+.perfection {
+    font-weight: 500;
+    font-size: 4rem;
+}
+.homeimg img {
+    height: 8rem;
+    width: auto;
+}
+
+.homeimg2 img {
+    width: 25vw;
+    margin-left: 40%;
+    margin-top: 1.5rem;
+}
+
+footer {
+    gap: 6rem;
+    padding: 4rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+#icons img {
+    height: 5rem;
+}
+
+
+
+.btn {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+}
+
+
+.card {
+    width: 230px;
+    height: 330px;
+}
+
+
+.card-back h1 {
+    font-size: 1.5rem;
+}
+
+.card-back p {
+    font-size: 1.7rem;
+}
 }
