@@ -6,7 +6,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Gasoek+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+::-webkit-scrollbar {
+    width: 10px;
 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(230, 223, 187);
+  }
+    ::-webkit-scrollbar-thumb {
+    background-color: rgb(49, 45, 4);
+    border-radius: 20px;
+
+  }
+  
 * {
     padding: 0;
     margin: 0;
@@ -50,6 +63,10 @@ nav {
     top: 0;
     z-index: 100;
 }
+
+
+
+
 
 nav .logo {
     display: flex;
@@ -634,7 +651,7 @@ footer {
 
 
 /* phone */
-@media only screen and (min-width: 390px) and (max-width: 520px) {
+@media only screen and (min-width: 390px) and (max-width: 519px) {
     nav .logo a {
         color: rgb(29, 24, 1);
         font-size: 2rem;
@@ -886,7 +903,7 @@ footer {
 }
 /* *****************************************************************************************************************************************
  */
- @media only screen and (min-width: 769px) and (max-width: 992px) {
+ @media only screen and (min-width: 769px) and (max-width: 990px) {
 
  
     nav .logo {
@@ -993,7 +1010,7 @@ footer {
 
 /* *****************************************************************************************************************************************
  */
- @media only screen and (min-width: 993px) and (max-width: 1200px) {
+ @media only screen and (min-width: 991px) and (max-width: 1200px) {
 
 
 
